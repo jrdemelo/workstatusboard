@@ -4,11 +4,16 @@
 	<title>James Update!</title>
 </head>
 <body>
+	<div style="font-size: 22px">
 	<form action="update.php" method="post">
-	Status: <input name="status" type="text" /><br>
-	Location: <input name="loc" type="text" /><br>
-	<input name="grid" type="radio" value="On" checked="" /> On-Grid
-	<input name="grid" type="radio" value="Off"> Off-Grid<br>
+	Status: <input name="status" type="text" maxlength="200" /><br>
+	Location: <input name="loc" type="text" maxlength="40" /><br>
+	Grid Status: 
+		<select>
+			<option name="grid" value="On">On</option>
+			<option name="grid" value="Off">Off</option>
+		</select>
+	<br>
 	<input name="submit" type="submit" value="Update" />
 	</form>
 </body>
